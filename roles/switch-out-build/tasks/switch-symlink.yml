@@ -1,3 +1,4 @@
 ---
 - name: Replace current application symlink
-  command: "ln -nfs $(dirname {{ dist_target }})/{{ symlink_name }} {{ dist_target }}"
+  command: "ln -nfs {{ dist_target }} {{ dist_target }}/../{{ symlink_name }}"
+  notify: Restart web server

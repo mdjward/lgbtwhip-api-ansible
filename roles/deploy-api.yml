@@ -3,9 +3,12 @@
   sudo: no
   roles:
     - transfer-api
+    - force-ownership
     - configure-api
     - switch-out-build
   vars:
     php_executable: /usr/bin/php
     doctrine_script: lib/bin/doctrine
     symlink_name: current
+    apache_user: www-data
+    http_service: nginx
