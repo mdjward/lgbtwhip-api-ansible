@@ -1,0 +1,3 @@
+---
+- name: Force ownership of parent directory
+  command: "chown -R {{ apache_user }}:{{ apache_user }} {{ dist_target }}"
