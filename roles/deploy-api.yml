@@ -1,0 +1,10 @@
+---
+- hosts: local
+  sudo: no
+  roles:
+    - transfer-api
+    - configure-api
+  vars:
+    php_executable: /usr/bin/php
+    doctrine_script: lib/bin/doctrine
+

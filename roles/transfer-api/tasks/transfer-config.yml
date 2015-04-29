@@ -1,0 +1,4 @@
+---
+- name: Transfer configuration file
+  copy: src={{ config_src }} dest={{ dist_target }}/etc/config.yml
+

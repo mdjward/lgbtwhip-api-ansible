@@ -1,0 +1,7 @@
+---
+- name: Build Doctrine proxy objects
+  command: "{{ php_executable }} {{ doctrine_script }} orm:generate:proxies --no-interaction chdir={{ dist_target }}"
+
+- name: Run Doctrine migrations
+  command: "{{ php_executable }} {{ doctrine_script }} migrations:migrate --no-interaction chdir={{ dist_target }}"
+

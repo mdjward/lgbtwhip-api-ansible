@@ -1,0 +1,6 @@
+---
+- name: Create target directory
+  command: mkdir {{ dist_target }} creates={{ dist_target }}
+- name: Transfer target
+  unarchive: src={{ dist_src}} dest={{ dist_target}} copy=yes
+

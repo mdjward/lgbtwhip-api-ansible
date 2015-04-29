@@ -1,0 +1,6 @@
+---
+- name: Build application cache dir
+  command: mkdir -p {{ dist_target }}/var/cache creates={{ dist_target }}/var/cache
+- name: Symlink cache
+  command: ln -s {{ cache_path }} {{ dist_target }}/var/cache/application creates={{ dist_target }}/var/cache/application
+
