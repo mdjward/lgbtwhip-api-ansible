@@ -1,0 +1,3 @@
+---
+- include: switch-symlink.yml
+#- include: cleanup-old-builds.yml
