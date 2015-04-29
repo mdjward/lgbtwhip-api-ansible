@@ -1,5 +1,5 @@
 ---
-- hosts: local
+- hosts: api.thelgbtwhip.org.uk
   sudo: no
   roles:
     - transfer-api
