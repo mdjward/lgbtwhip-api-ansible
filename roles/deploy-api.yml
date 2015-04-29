@@ -4,7 +4,7 @@
   roles:
     - transfer-api
     - configure-api
-    - switch-out-builds
+    - switch-out-build
   vars:
     dist_src: "$WORKSPACE/dist/lgbtwhip-api.tar.bz2"
     config_src: "$WORKSPACE/config.yml"
