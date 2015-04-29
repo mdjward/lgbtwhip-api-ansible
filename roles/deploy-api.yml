@@ -6,8 +6,6 @@
     - configure-api
     - switch-out-build
   vars:
-    dist_src: "$WORKSPACE/dist/lgbtwhip-api.tar.bz2"
-    config_src: "$WORKSPACE/config.yml"
     php_executable: /usr/bin/php
     doctrine_script: lib/bin/doctrine
     symlink_name: current
